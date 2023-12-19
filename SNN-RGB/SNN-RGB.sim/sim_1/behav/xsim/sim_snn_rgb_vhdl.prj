@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SNN-RGB.srcs/sources_1/new/control.vhd" \
+"../../../../SNN-RGB.srcs/sources_1/new/gen_input.vhd" \
+"../../../../SNN-RGB.srcs/sources_1/new/neuron.vhd" \
+"../../../../SNN-RGB.srcs/sources_1/new/snn_rgb.vhd" \
+"../../../../SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd" \
+
+# Do not sort compile order
+nosort
