@@ -39,7 +39,7 @@ We developed several modules, including control, gen_input, and neuron, integrat
 ## Simulation Results
 
 ![Alt text](Sources/images/image-3.png)
-*Figure : Simulation snap*
+
 | Test Image | Output Image |
 | --------------- | ----------------- |
 | ![TestImage](Sources/images/image-5.png) | ![Output Image](Sources/images/image-4.png) |
