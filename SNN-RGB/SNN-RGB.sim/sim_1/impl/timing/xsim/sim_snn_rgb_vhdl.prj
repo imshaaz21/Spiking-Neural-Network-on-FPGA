@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd" \
+
+# Do not sort compile order
+nosort

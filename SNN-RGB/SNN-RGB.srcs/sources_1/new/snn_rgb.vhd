@@ -58,7 +58,7 @@ architecture behave of snn_rgb is
     constant sp_steps                   : integer := 64;                    -- number of timesteps a pixel will be evaluated for
 
     constant v_th                       : integer := 256;                   -- voltage threshold
-    constant n_sp_to_activate           : integer := 25;                    -- necessary number of output spikes to classify
+    constant n_sp_to_activate           : integer := 23;                    -- necessary number of output spikes to classify
     constant ltc_delay                  : integer := 11;                    -- latency delay
     constant total_delay                : integer := sp_steps + ltc_delay;  -- delay overall
 
@@ -95,10 +95,10 @@ pseudo_random: entity work.gen_input
 
 -- neurons
 hidden0: entity work.neuron
-        generic map(w_0             => 8,
-                    w_1             => 37,
-                    w_2             => 141,
-                    bias            => 69,
+        generic map(w_0             => -1,
+                    w_1             => 10,
+                    w_2             => 103,
+                    bias            => -79,
                     v_th            => v_th)
         port map(   clk             => clk,
                     reset           => reset,
@@ -109,10 +109,10 @@ hidden0: entity work.neuron
                     spike_out       => h_0);
 
 hidden1: entity work.neuron 
-        generic map(w_0				=> 44,
-                    w_1				=> 25,
-                    w_2				=> -73,
-                    bias 			=> 124,
+        generic map(w_0				=> -74,
+                    w_1				=> -75,
+                    w_2				=> -131,
+                    bias 			=> 27,
                     v_th 			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -123,10 +123,10 @@ hidden1: entity work.neuron
                     spike_out		=> h_1);
 
 hidden2: entity work.neuron 
-        generic map(w_0				=> 20,
-                    w_1				=> -39,
-                    w_2				=> -23,
-                    bias			=> 8,
+        generic map(w_0				=> -113,
+                    w_1				=> -184,
+                    w_2				=> -208,
+                    bias			=> 210,
                     v_th			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -137,10 +137,10 @@ hidden2: entity work.neuron
                     spike_out	=> h_2);
 
 hidden3: entity work.neuron 
-        generic map(w_0				=> 137,
-                    w_1				=> 72,
-                    w_2				=> -113,
-                    bias			=> 20,
+        generic map(w_0				=> 83,
+                    w_1				=> 47,
+                    w_2				=> -79,
+                    bias			=> -43,
                     v_th			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -151,10 +151,10 @@ hidden3: entity work.neuron
                     spike_out	=> h_3);
 
 hidden4: entity work.neuron 
-        generic map(w_0				=> 7,
-                    w_1				=> 45,
-                    w_2				=> -37,
-                    bias			=> -25,
+        generic map(w_0				=> 11,
+                    w_1				=> 74,
+                    w_2				=> -61,
+                    bias			=> -42,
                     v_th			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -165,10 +165,10 @@ hidden4: entity work.neuron
                     spike_out	=> h_4);
 
 hidden5: entity work.neuron 
-        generic map(w_0				=> 81,
-                    w_1				=> 33,
-                    w_2				=> 55,
-                    bias			=> -57,
+        generic map(w_0				=> 46,
+                    w_1				=> -13,
+                    w_2				=> 61,
+                    bias			=> -78,
                     v_th			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -179,10 +179,10 @@ hidden5: entity work.neuron
                     spike_out	=> h_5);
 
 hidden6: entity work.neuron 
-        generic map(w_0				=> -89,
-                    w_1				=> 0,
-                    w_2				=> 132,
-                    bias			=> 33,
+        generic map(w_0				=> 125,
+                    w_1				=> 179,
+                    w_2				=> 168,
+                    bias			=> -216,
                     v_th			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -193,14 +193,14 @@ hidden6: entity work.neuron
                     spike_out	=> h_6);
 
 output0: entity work.neuron 
-        generic map(w_0				=> 196,
-                    w_1				=> -295,
-                    w_2				=> 74,
-                    w_3				=> -275,
-                    w_4				=> 110,
-                    w_5				=> -178,
-                    w_6				=> 349,
-                    bias			=> 57,
+        generic map(w_0				=> 42,
+                    w_1				=> -222,
+                    w_2				=> 13,
+                    w_3				=> 2,
+                    w_4				=> 60,
+                    w_5				=> -101,
+                    w_6				=> 316,
+                    bias			=> -59,
                     v_th			=> v_th)
         port map(   clk      	    => clk,
                     reset			=> reset,
@@ -215,14 +215,14 @@ output0: entity work.neuron
                     spike_out	=> out_0);
 
 output1: entity work.neuron 
-        generic map(w_0				=> -255,
-                    w_1				=> 57,
-                    w_2				=> -171,
-                    w_3				=> 497,
-                    w_4				=> -108,
-                    w_5				=> 9,
-                    w_6				=> -386,
-                    bias			=> 92,
+        generic map(w_0				=> -88,
+                    w_1				=> 8,
+                    w_2				=> -423,
+                    w_3				=> 82,
+                    w_4				=> -59,
+                    w_5				=> 16,
+                    w_6				=> -346,
+                    bias			=> 155,
                     v_th			=> v_th)
         port map(   clk      		=> clk,
                     reset			=> reset,
@@ -255,17 +255,14 @@ begin
 	g_0			<= to_integer(unsigned(g_in));
 	b_0			<= to_integer(unsigned(b_in));
 	
-	-- frame_reset at start of image
 	if (vs_0 = '1' and vs_q = '0') then
 		frame_reset <= '1';
 	else
 		frame_reset <= '0';
 	end if;
 	
-	
-	
-	-- count evaluation steps and reset neurons after evaluation is done
-	if (de_q = '1' and de_1 = '0') or (de_0 = '1' and step >= sp_steps) then -- end of line or maximum number of steps
+
+	if (de_q = '1' and de_1 = '0') or (de_0 = '1' and step >= sp_steps) then 
 		step <= 1;
 		neuron_reset <= '1';
 	elsif de_0 = '1' then
@@ -288,11 +285,11 @@ begin
 	-- create output 	
 	if res_ly_2 = '1' then	
 		if num_out0_sp >= n_sp_to_activate then         -- if enough output spikes were generated in neuron 1, output blue
-			 r_out_1 <= '0';
-			 g_out_1 <= '0';
-			 b_out_1 <= '1';
-		elsif num_out1_sp >= n_sp_to_activate then      -- if enough output spikes were generated in neuron 2, output yellow
 			 r_out_1 <= '1';
+			 g_out_1 <= '0';
+			 b_out_1 <= '0';
+		elsif num_out1_sp >= n_sp_to_activate then      -- if enough output spikes were generated in neuron 2, output yellow
+			 r_out_1 <= '0';
 			 g_out_1 <= '1';
 			 b_out_1 <= '0';
 		else                                            -- otherwise output black

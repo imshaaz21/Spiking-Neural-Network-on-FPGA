@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Vivado Projects/SNN-RGB/SNN-RGB.runs/synth_1'
+HD_PWD='D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log snn_rgb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source snn_rgb.tcl
+EAStep vivado -log neuron.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source neuron.tcl

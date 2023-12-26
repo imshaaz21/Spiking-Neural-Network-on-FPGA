@@ -5,4 +5,25 @@ Running: D:/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture behave of entity xil_defaultlib.control [\control(delay=75,layer_delay=5)...]
+Compiling architecture behave of entity xil_defaultlib.gen_input [gen_input_default]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=-1,w_1=10,w_2=103,bi...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=-74,w_1=-75,w_2=-131...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=-113,w_1=-184,w_2=-2...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=83,w_1=47,w_2=-79,bi...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=11,w_1=74,w_2=-61,bi...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=46,w_1=-13,w_2=61,bi...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=125,w_1=179,w_2=168,...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=42,w_1=-222,w_2=13,w...]
+Compiling architecture behave of entity xil_defaultlib.neuron [\neuron(w_0=-88,w_1=8,w_2=-423,w...]
+Compiling architecture behave of entity xil_defaultlib.snn_rgb [snn_rgb_default]
+Compiling architecture sim of entity xil_defaultlib.sim_snn_rgb
+Built simulation snapshot sim_snn_rgb_behav

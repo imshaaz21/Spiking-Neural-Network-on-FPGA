@@ -1,3 +1,15 @@
+-- sim_snn_rgb.vhd
+--   adapted from sim_sharp.vhd
+-- Release: Marco Winzker, Hochschule Bonn-Rhein-Sieg, 22.12.2022
+--
+-- testbench for edge enhancement with FIR filter
+-- reading and writing images in ppm-file format
+--          ppm-file can be generated and viewed with IrfanView and probably other image viewers
+--          verified with IrfanView version 4.54 - 64 bit and 4.44 - 64 bit
+--
+-- FPGA Vision Remote Lab http://h-brs.de/fpga-vision-lab
+-- (c) Marco Winzker, Hochschule Bonn-Rhein-Sieg, 10.01.2020
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.ALL;
@@ -10,8 +22,8 @@ end sim_snn_rgb;
 architecture sim of sim_snn_rgb is
 
 -- define constants for simulation
-  constant stimuli_filename  : string  := "A59_snap.ppm";
-  constant response_filename : string  := "A59_snn-out.ppm";
+  constant stimuli_filename  : string  := "test10.ppm";
+  constant response_filename : string  := "test10_snn-out.ppm";
   constant x_blank           : integer := 100;   -- horizontal blanking
   constant trail             : integer := 1000;  -- clock cycles after active image
 

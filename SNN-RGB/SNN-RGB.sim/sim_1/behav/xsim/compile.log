@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'snn_rgb'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_snn_rgb'

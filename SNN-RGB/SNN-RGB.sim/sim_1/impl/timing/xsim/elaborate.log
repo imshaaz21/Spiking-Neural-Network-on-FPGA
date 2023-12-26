@@ -1,0 +1,51 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot sim_snn_rgb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.sim_snn_rgb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "sim_snn_rgb_time_impl.sdf", for root module "sim_snn_rgb/duv".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "sim_snn_rgb_time_impl.sdf", for root module "sim_snn_rgb/duv".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.SRLC32E_default
+Compiling module simprims_ver.SRL16E_default
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.control
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.neuron
+Compiling module xil_defaultlib.neuron__parameterized0
+Compiling module xil_defaultlib.neuron__parameterized1
+Compiling module xil_defaultlib.neuron__parameterized2
+Compiling module xil_defaultlib.neuron__parameterized3
+Compiling module xil_defaultlib.neuron__parameterized4
+Compiling module xil_defaultlib.neuron__parameterized5
+Compiling module xil_defaultlib.neuron__parameterized6
+Compiling module xil_defaultlib.neuron__parameterized7
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.gen_input
+Compiling module xil_defaultlib.snn_rgb
+Compiling architecture sim of entity xil_defaultlib.sim_snn_rgb
+Built simulation snapshot sim_snn_rgb_time_impl

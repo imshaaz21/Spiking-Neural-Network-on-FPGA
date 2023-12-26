@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.sim/sim_1/impl/timing/xsim/sim_snn_rgb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module gen_input
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-311] analyzing module neuron__parameterized0
+INFO: [VRFC 10-311] analyzing module neuron__parameterized1
+INFO: [VRFC 10-311] analyzing module neuron__parameterized2
+INFO: [VRFC 10-311] analyzing module neuron__parameterized3
+INFO: [VRFC 10-311] analyzing module neuron__parameterized4
+INFO: [VRFC 10-311] analyzing module neuron__parameterized5
+INFO: [VRFC 10-311] analyzing module neuron__parameterized6
+INFO: [VRFC 10-311] analyzing module neuron__parameterized7
+INFO: [VRFC 10-311] analyzing module snn_rgb
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_snn_rgb'

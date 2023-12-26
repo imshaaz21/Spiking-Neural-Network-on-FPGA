@@ -2,8 +2,8 @@
 2020.2
 Oct 13 2023
 20:47:58
-D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd,1702982640,vhdl,,,,sim_snn_rgb,,,,,,,,
-D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/control.vhd,1702981672,vhdl,D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,,,control,,,,,,,,
-D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/gen_input.vhd,1702981708,vhdl,D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,,,gen_input,,,,,,,,
-D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/neuron.vhd,1702982340,vhdl,D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,,,neuron,,,,,,,,
-D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,1702982431,vhdl,D:/Vivado Projects/SNN-RGB/SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd,,,snn_rgb,,,,,,,,
+D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd,1703608880,vhdl,,,,sim_snn_rgb,,,,,,,,
+D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/control.vhd,1702981672,vhdl,D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,,,control,,,,,,,,
+D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/gen_input.vhd,1702981708,vhdl,D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,,,gen_input,,,,,,,,
+D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/neuron.vhd,1702982340,vhdl,D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,,,neuron,,,,,,,,
+D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sources_1/new/snn_rgb.vhd,1703612974,vhdl,D:/Vivado Projects/Spiking-Neural-Network-on-FPGA/SNN-RGB/SNN-RGB.srcs/sim_1/new/sim_snn_rgb.vhd,,,snn_rgb,,,,,,,,
