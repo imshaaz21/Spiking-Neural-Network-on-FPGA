@@ -9,7 +9,7 @@ Our project involves implementing a Spiking Neural Network (SNN) on an FPGA for 
 The FPGA acts as a hardware accelerator for image processing, and the SNN is optimized for color detection, specifically distinguishing between crosswalk and road areas. Real-time observation and behavioral analysis offer insights into system accuracy. Performance metrics, including accuracy and latency, evaluate the efficiency of the SNN on FPGA.
 
 ![Alt text](Sources/images/snn.gif)
-*Figure 2: Source - Medium*
+*Figure 2: Source - Medium* (https://medium.com/@tapwi93/first-steps-in-spiking-neural-networks-da3c82f538ad)
 
 ## Directory Structure
 ```
