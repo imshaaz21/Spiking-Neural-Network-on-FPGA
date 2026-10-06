@@ -1,5 +1,7 @@
 # Spiking Neural Network on FPGA
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/imshaaz)
+
 ![Alt text](Sources/images/basys3.png)
 *Figure 1: Basys3*
 ## Description
@@ -53,3 +55,7 @@ We need to do some research on how to resolve the issue and find some alternativ
 1. https://github.com/antimattercorrade/Color_Detection_BASYS3
 2.	https://github.com/Marco-Winzker/Spiking_NN_RGB_FPGA
 3.	https://www.fpga4student.com/2016/11/two-ways-to-load-text-file-to-fpga-or.html
+
+## Support
+
+If this project helped you, you can [buy me a coffee](https://buymeacoffee.com/imshaaz).
